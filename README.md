@@ -52,11 +52,16 @@ Run it with `/hbs-event-email-digest`. That is the whole setup.
 
 ## Getting it daily
 
-Ask Claude Code:
+Run `/hbs-event-email-digest` whenever you want the brief. Mornings work well, since the digest email lands at 7:00 PM the night before and is final by then.
 
-> Schedule /hbs-event-email-digest to run every morning at 7:15 AM Eastern
+**Automating it does not currently work, and this is worth knowing before you try.** The Microsoft 365 connector is only available inside an interactive Claude session. It is not reachable from:
 
-That registers a scheduled agent that runs the brief and notifies you. You can also just run the command whenever you want it.
+- **Scheduled cloud agents (routines).** The routine API accepts an `mcp_connections` entry for the connector and reports it as connected, but its tools never appear in the sandbox. Tested twice, including with `permitted_tools` named explicitly.
+- **Headless CLI runs** (`claude -p "/hbs-event-email-digest"`), which is what you would point a cron job or Windows Task Scheduler at. The connector is absent there too.
+
+So a scheduled run has no way to read your mail. If you set one up anyway it will not silently invent events, but it will not produce a brief either.
+
+If that changes, this section will be the first thing updated.
 
 ## A note on timezones
 
