@@ -1,0 +1,11 @@
+{
+  "name": "hbs-event-email-digest",
+  "version": "0.1.0",
+  "description": "Turns the HBS Student Event Calendar daily digest email into a filtered brief, and adds the events you pick to your Outlook calendar.",
+  "author": {
+    "name": "realslimslaney"
+  },
+  "homepage": "https://github.com/realslimslaney/hbs-event-email-digest",
+  "license": "MIT",
+  "keywords": ["hbs", "outlook", "calendar", "microsoft-365", "events"]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "hbs-event-email-digest",
+  "owner": {
+    "name": "realslimslaney",
+    "url": "https://github.com/realslimslaney"
+  },
+  "plugins": [
+    {
+      "name": "hbs-event-email-digest",
+      "source": "./",
+      "description": "Daily brief of the HBS Student Event Calendar digest email, with one-step adds to your Outlook calendar."
+    }
+  ]
+}

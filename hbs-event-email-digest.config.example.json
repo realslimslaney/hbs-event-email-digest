@@ -1,0 +1,15 @@
+{
+  "_comment": "Optional. Copy to your Claude config directory as hbs-event-email-digest.config.json. Every field is auto-detected if omitted.",
+
+  "_audiences": "Which audience labels to treat as relevant. Auto-detected from your mba20XX.hbs.edu address.",
+  "audiences": ["RC Students", "All Students"],
+
+  "_showOtherAudiences": "Show filtered-out events in a compact section at the bottom. Set false to hide them entirely.",
+  "showOtherAudiences": true,
+
+  "_timeZone": "Windows timezone name used when creating events. Only change this if the Student Event Calendar stops being Eastern.",
+  "timeZone": "Eastern Standard Time",
+
+  "_showAs": "Free/busy status for created events: free, tentative, or busy.",
+  "showAs": "free"
+}
